@@ -1,0 +1,395 @@
+/* GENERAL RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0.1rem solid #000000;
+}
+
+footer *:focus,
+a:focus img,
+a:focus i::after {
+  outline: 0.1rem solid #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+/* GENERAL COMPONENTS */
+
+.container {
+  max-width: 144rem;
+  margin-inline: auto;
+  padding-inline: 8rem;
+}
+
+.heading {
+  font-family: "Raleway";
+  font-size: 4.1rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  text-decoration: none;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Raleway";
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(224, 100%, 68%);
+}
+
+.input {
+  font-family: "Raleway";
+  border-width: 0.1rem;
+  border-color: #000;
+  border-radius: 0.3rem;
+  box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.08);
+  font-size: 1.6rem;
+}
+
+.input::placeholder {
+  padding-left: 1.6rem;
+  color: hsl(0, 0%, 75%);
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6.4rem;
+}
+
+.header__navlinks {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  font-family: "Raleway";
+}
+
+.header__navlink,
+.header__navlink:link,
+.header__navlink:visited {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8rem 8rem 16.8rem;
+}
+
+.hero__container {
+  align-self: center;
+}
+
+.hero__header {
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.hero__description {
+  color: hsl(243, 87%, 12%);
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+  max-width: 80%;
+  line-height: 1.6;
+}
+
+.hero__form {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.btn--hero {
+  padding: 1.2rem 4.2rem;
+}
+
+.hero__form input {
+  width: 45%;
+  padding: 1.2rem 1.2rem;
+}
+
+/* BACKGROUND */
+
+.bg {
+  width: 100%;
+}
+
+.bg-mobile {
+  display: none;
+}
+
+/* HOW SECTION */
+
+.how {
+  padding-block: 8rem;
+  background-color: #f8f8fe;
+}
+
+.how__container {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+
+.how__header {
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.how__description {
+  color: hsl(243, 87%, 12%);
+  font-weight: 400;
+  max-width: 75%;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.how__link,
+.how__link:link,
+.how__link:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: hsl(170, 45%, 43%);
+  width: fit-content;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+  transition: all 0.3s;
+  margin-bottom: 4.8rem;
+}
+
+.how__link:hover,
+.how__link:active {
+  filter: brightness(1.5);
+}
+
+.how__icon {
+  filter: brightness(1);
+  transition: all 0.3s;
+}
+
+.how__link:hover .how__icon,
+.how__link:active .how__icon {
+  filter: brightness(1.5);
+}
+
+.how__img {
+  max-width: 95%;
+  align-self: center;
+  justify-self: end;
+}
+/* TESTIMONIAL */
+
+.testimonial {
+  background-color: #fff;
+  padding: 3.2rem;
+  width: 50%;
+  border-radius: 0.8rem;
+  box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+.testimonial__description {
+  font-size: 1.2rem;
+  margin: 1.6rem 0;
+  line-height: 1.6;
+  letter-spacing: 0.25px;
+}
+
+.testimonial__author-container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.testimonial__author-img {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+}
+
+.testimonial__author-details {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+}
+
+.testimonial__author-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+}
+
+.testimonial__author-appointment {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+/* CTA SECTION */
+
+.cta {
+  padding-block: 9.6rem;
+  background-color: hsl(238, 22%, 44%);
+}
+
+.cta__container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.cta__content {
+  max-width: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  color: hsl(240, 75%, 98%);
+}
+
+.cta__header {
+  font-size: 2.7rem;
+}
+
+.cta__description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.cta__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.input--cta {
+  width: 90%;
+  padding: 1.6rem 1.6rem;
+}
+
+.btn--cta {
+  padding: 1.2rem 3.2rem;
+}
+
+/* FOOTER */
+.footer {
+  padding-block: 9.6rem;
+  background-color: hsl(243, 87%, 12%);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  row-gap: 3.2rem;
+  column-gap: 9.6rem;
+}
+
+.footer__logo {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: start;
+}
+
+.footer__img {
+  filter: brightness(0) invert(1);
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer__link-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.footer__link,
+.footer__link:link,
+.footer:visited {
+  color: #f8f8fe;
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+}
+
+.footer__link:hover,
+.footer:active {
+  color: hsl(224, 93%, 58%);
+}
+
+.footer__col--social {
+  display: flex;
+  flex-direction: row;
+  gap: 4.2rem;
+}
+
+.footer__social-link {
+  color: hsl(224, 93%, 58%);
+}
+
+.footer__col--social a {
+  text-decoration: none;
+}
+
+.footer__icon {
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.footer__icon::after {
+  content: "";
+  border: 1px solid #fff;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer__icon:hover,
+.footer__icon:active {
+  color: hsl(224, 93%, 58%);
+}
+
+.footer__icon:hover:after {
+  border: 1px solid hsl(224, 93%, 58%);
+}
