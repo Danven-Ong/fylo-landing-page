@@ -1,6 +1,6 @@
 # Fylo Landing Page Challenge Solution
 
-This is my solution for the **Fylo Landing Page Challenge** from [frontendmentor.io](https://frontendmentor.io)
+This is my solution for the **Fylo Landing Page Challenge** from [frontendmentor.io](https://www.frontendmentor.io/challenges/fylo-landing-page-with-two-column-layout-5ca5ef041e82137ec91a50f5)
 
 ## Language and Technology used
 * HTML
